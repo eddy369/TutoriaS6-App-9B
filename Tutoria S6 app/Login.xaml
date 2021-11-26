@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tutoria_S6_app.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#35158B" Padding="20" CornerRadius="0">
+                <Label Text="Ventana Login" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="1" Margin="0,20">
+                    <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario" FontSize="22"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <Entry x:Name="txtContrasenia" Placeholder="Ingrese contrasena" FontSize="22"/>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Grid.Column="0" Margin="10">
+                    <Button x:Name="btnIniciar" Text="Iniciar sesion" TextColor="White" BackgroundColor="DarkCyan" Clicked="btnIniciar_Clicked" FontSize="26"/>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Grid.Column="1" Margin="10">
+                    <Button x:Name="btnRegistrar" Text="Registrar" Clicked="btnRegistrar_Clicked" FontSize="26"/>
+                </StackLayout>
+                </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
